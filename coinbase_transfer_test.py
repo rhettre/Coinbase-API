@@ -139,8 +139,7 @@ def withdraw_crypto(amount):
 
 
 def lambda_handler(event, context):
+    list_payment_methods()
     deposit_fiat(DEPOSIT_AMOUNT)
-
-
-# list_accounts()
-withdraw_crypto(.0005)
+    list_accounts()
+    withdraw_crypto(.0005)
